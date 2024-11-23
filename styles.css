@@ -1,0 +1,146 @@
+/* Body and container */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Keep black background for contrast */
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 120%;
+    margin-bottom: 20px;
+}
+
+.particles {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    padding: 10px;
+    width: 100%; /* Ensures the navbar takes the full width of the main content */
+    max-width: 1000px; /* Restrict the width to a maximum value */
+    margin: 0 auto; /* Centers the navbar within the content */
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+.navbar-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the items */
+}
+
+.navbar-items li {
+    margin: 0 20px; /* Space between items */
+}
+
+.navbar-items a {
+    color: #fff; /* White text for the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.navbar-items a:hover {
+    color: #f4f4f4; /* Lighter color on hover */
+}
+
+/* Section */
+.section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+/* Forum Item */
+.forum-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px; /* Rounded corners for forum items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Forum Item Hover Effect */
+.forum-item:hover {
+    transform: scale(1.01); /* Slight zoom effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #f4f4f4; /* Change background to a lighter grey on hover */
+}
+
+/* Forum Title */
+.forum-title {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Stats */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: #666;
+}
+
+/* Timer */
+.timer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Timer Values */
+.timer-values {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.timer-item {
+    text-align: center;
+}
+
+.timer-value {
+    font-size: 1.5em;
+    font-weight: bold;
+}
